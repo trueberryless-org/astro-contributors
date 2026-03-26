@@ -21,9 +21,9 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.38.1",
+    "@astrojs/starlight": "^0.38.2",
     "@trueberryless-org/starlight-plugins-docs-components": "^0.5.0",
-    "astro": "^6.0.5",
+    "astro": "^6.1.1",
     "astro-contributors": "workspace:*",
     "sharp": "^0.34.5"
   },
