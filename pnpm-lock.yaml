@@ -12,14 +12,14 @@ importers:
         specifier: ^0.6.0
         version: 0.6.0
       '@changesets/cli':
-        specifier: ^2.30.0
-        version: 2.30.0(@types/node@25.0.3)
+        specifier: ^2.31.0
+        version: 2.31.0(@types/node@25.0.3)
       '@trivago/prettier-plugin-sort-imports':
         specifier: 6.0.2
-        version: 6.0.2(prettier@3.8.1)
+        version: 6.0.2(prettier@3.8.3)
       prettier:
-        specifier: 3.8.1
-        version: 3.8.1
+        specifier: 3.8.3
+        version: 3.8.3
       prettier-plugin-astro:
         specifier: 0.14.1
         version: 0.14.1
@@ -27,11 +27,11 @@ importers:
   docs:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.38.1
-        version: 0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))
+        specifier: ^0.38.4
+        version: 0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))
       '@trueberryless-org/starlight-plugins-docs-components':
         specifier: ^0.5.0
-        version: 0.5.0(@astrojs/starlight@0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))
+        version: 0.5.0(@astrojs/starlight@0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))
       astro:
         specifier: ^6.0.5
         version: 6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)
@@ -84,8 +84,8 @@ packages:
   '@astrojs/sitemap@3.7.1':
     resolution: {integrity: sha512-IzQqdTeskaMX+QDZCzMuJIp8A8C1vgzMBp/NmHNnadepHYNHcxQdGLQZYfkbd2EbRXUfOS+UDIKx8sKg0oWVdw==}
 
-  '@astrojs/starlight@0.38.1':
-    resolution: {integrity: sha512-CATPH4Dy44OYAJhoyUHh6NqpColWEVufanGVwnM0l/bcaNMo5V/rypwL0Vu0Edp+ZIXE7/1DA9CrNj5jmCVSLQ==}
+  '@astrojs/starlight@0.38.4':
+    resolution: {integrity: sha512-TGFIr2aVC+gcZCPQzJOO4ZnA/yL3jRnsUDcKlVdEhxhxaOQnWr9lZ9MRScg9zU6uh3HVeZAmmjkLCdTlHdcaZA==}
     peerDependencies:
       astro: ^6.0.0
 
@@ -160,11 +160,11 @@ packages:
     resolution: {integrity: sha512-VERIM64vtTP1C4mxQ5thVT9fK0apjPFobqybMtA1UdUujWka24ERHbRHFGmpbbhp73MhV+KSsHQH9C6uOTdEQA==}
     engines: {node: '>=18'}
 
-  '@changesets/apply-release-plan@7.1.0':
-    resolution: {integrity: sha512-yq8ML3YS7koKQ/9bk1PqO0HMzApIFNwjlwCnwFEXMzNe8NpzeeYYKCmnhWJGkN8g7E51MnWaSbqRcTcdIxUgnQ==}
+  '@changesets/apply-release-plan@7.1.1':
+    resolution: {integrity: sha512-9qPCm/rLx/xoOFXIHGB229+4GOL76S4MC+7tyOuTsR6+1jYlfFDQORdvwR5hDA6y4FL2BPt3qpbcQIS+dW85LA==}
 
-  '@changesets/assemble-release-plan@6.0.9':
-    resolution: {integrity: sha512-tPgeeqCHIwNo8sypKlS3gOPmsS3wP0zHt67JDuL20P4QcXiw/O4Hl7oXiuLnP9yg+rXLQ2sScdV1Kkzde61iSQ==}
+  '@changesets/assemble-release-plan@6.0.10':
+    resolution: {integrity: sha512-rSDcqdJ9KbVyjpBIuCidhvZNIiVt1XaIYp73ycVQRIA5n/j6wQaEk0ChRLMUQ1vkxZe51PTQ9OIhbg6HQMW45A==}
 
   '@changesets/changelog-git@0.2.1':
     resolution: {integrity: sha512-x/xEleCFLH28c3bQeQIyeZf8lFXyDFVn1SgcBiR2Tw/r4IAWlk1fzxCEZ6NxQAjF2Nwtczoen3OA2qR+UawQ8Q==}
@@ -172,24 +172,24 @@ packages:
   '@changesets/changelog-github@0.6.0':
     resolution: {integrity: sha512-wA2/y4hR/A1K411cCT75rz0d46Iezxp1WYRFoFJDIUpkQ6oDBAIUiU7BZkDCmYgz0NBl94X1lgcZO+mHoiHnFg==}
 
-  '@changesets/cli@2.30.0':
-    resolution: {integrity: sha512-5D3Nk2JPqMI1wK25pEymeWRSlSMdo5QOGlyfrKg0AOufrUcjEE3RQgaCpHoBiM31CSNrtSgdJ0U6zL1rLDDfBA==}
+  '@changesets/cli@2.31.0':
+    resolution: {integrity: sha512-AhI4enNTgHu2IZr6K4WZyf0EPch4XVMn1yOMFmCD9gsfBGqMYaHXls5HyDv6/CL5axVQABz68eG30eCtbr2wFg==}
     hasBin: true
 
-  '@changesets/config@3.1.3':
-    resolution: {integrity: sha512-vnXjcey8YgBn2L1OPWd3ORs0bGC4LoYcK/ubpgvzNVr53JXV5GiTVj7fWdMRsoKUH7hhhMAQnsJUqLr21EncNw==}
+  '@changesets/config@3.1.4':
+    resolution: {integrity: sha512-pf0bvD/v6WI2cRlZ6hzpjtZdSlXDXMAJ+Iz7xfFzV4ZxJ8OGGAON+1qYc99ZPrijnt4xp3VGG7eNvAOGS24V1Q==}
 
   '@changesets/errors@0.2.0':
     resolution: {integrity: sha512-6BLOQUscTpZeGljvyQXlWOItQyU71kCdGz7Pi8H8zdw6BI0g3m43iL4xKUVPWtG+qrrL9DTjpdn8eYuCQSRpow==}
 
-  '@changesets/get-dependents-graph@2.1.3':
-    resolution: {integrity: sha512-gphr+v0mv2I3Oxt19VdWRRUxq3sseyUpX9DaHpTUmLj92Y10AGy+XOtV+kbM6L/fDcpx7/ISDFK6T8A/P3lOdQ==}
+  '@changesets/get-dependents-graph@2.1.4':
+    resolution: {integrity: sha512-ZsS00x6WvmHq3sQv8oCMwL0f/z3wbXCVuSVTJwCnnmbC/iBdNJGFx1EcbMG4PC6sXRyH69liM4A2WKXzn/kRPg==}
 
   '@changesets/get-github-info@0.8.0':
     resolution: {integrity: sha512-cRnC+xdF0JIik7coko3iUP9qbnfi1iJQ3sAa6dE+Tx3+ET8bjFEm63PA4WEohgjYcmsOikPHWzPsMWWiZmntOQ==}
 
-  '@changesets/get-release-plan@4.0.15':
-    resolution: {integrity: sha512-Q04ZaRPuEVZtA+auOYgFaVQQSA98dXiVe/yFaZfY7hoSmQICHGvP0TF4u3EDNHWmmCS4ekA/XSpKlSM2PyTS2g==}
+  '@changesets/get-release-plan@4.0.16':
+    resolution: {integrity: sha512-2K5Om6CrMPm45rtvckfzWo7e9jOVCKLCnXia5eUPaURH7/LWzri7pK1TycdzAuAtehLkW7VPbWLCSExTHmiI6g==}
 
   '@changesets/get-version-range-type@0.4.0':
     resolution: {integrity: sha512-hwawtob9DryoGTpixy1D3ZXbGgJu1Rhr+ySH2PvTLHvkZuQ7sRT4oQwMh0hbqZH1weAooedEjRsbrWcGLCeyVQ==}
@@ -1835,8 +1835,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  prettier@3.8.1:
-    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2177,9 +2177,6 @@ packages:
   unist-util-visit-parents@6.0.2:
     resolution: {integrity: sha512-goh1s1TBrqSqukSc8wrjwWhL0hiJxgA8m4kFxGlQ+8FYQ3C/m11FcTs4YYem7V664AhHVvgoQLk890Ssdsr2IQ==}
 
-  unist-util-visit@5.0.0:
-    resolution: {integrity: sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==}
-
   unist-util-visit@5.1.0:
     resolution: {integrity: sha512-m+vIdyeCOpdr/QeQCu2EzxX/ohgS8KbnPDgFni4dQsfSCtpz8UqDyY5GjRru8PDKuYn7Fq19j1CQ+nJSsGKOzg==}
 
@@ -2418,7 +2415,7 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 4.3.6
 
-  '@astrojs/starlight@0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))':
+  '@astrojs/starlight@0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))':
     dependencies:
       '@astrojs/markdown-remark': 7.0.0
       '@astrojs/mdx': 5.0.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))
@@ -2447,7 +2444,7 @@ snapshots:
       remark-directive: 3.0.0
       ultrahtml: 1.6.0
       unified: 11.0.5
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
       vfile: 6.0.3
     transitivePeerDependencies:
       - supports-color
@@ -2539,9 +2536,9 @@ snapshots:
     dependencies:
       fontkitten: 1.0.0
 
-  '@changesets/apply-release-plan@7.1.0':
+  '@changesets/apply-release-plan@7.1.1':
     dependencies:
-      '@changesets/config': 3.1.3
+      '@changesets/config': 3.1.4
       '@changesets/get-version-range-type': 0.4.0
       '@changesets/git': 3.0.4
       '@changesets/should-skip-package': 0.1.2
@@ -2553,16 +2550,16 @@ snapshots:
       outdent: 0.5.0
       prettier: 2.8.8
       resolve-from: 5.0.0
-      semver: 7.7.3
+      semver: 7.7.4
 
-  '@changesets/assemble-release-plan@6.0.9':
+  '@changesets/assemble-release-plan@6.0.10':
     dependencies:
       '@changesets/errors': 0.2.0
-      '@changesets/get-dependents-graph': 2.1.3
+      '@changesets/get-dependents-graph': 2.1.4
       '@changesets/should-skip-package': 0.1.2
       '@changesets/types': 6.1.0
       '@manypkg/get-packages': 1.1.3
-      semver: 7.7.3
+      semver: 7.7.4
 
   '@changesets/changelog-git@0.2.1':
     dependencies:
@@ -2576,15 +2573,15 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@changesets/cli@2.30.0(@types/node@25.0.3)':
+  '@changesets/cli@2.31.0(@types/node@25.0.3)':
     dependencies:
-      '@changesets/apply-release-plan': 7.1.0
-      '@changesets/assemble-release-plan': 6.0.9
+      '@changesets/apply-release-plan': 7.1.1
+      '@changesets/assemble-release-plan': 6.0.10
       '@changesets/changelog-git': 0.2.1
-      '@changesets/config': 3.1.3
+      '@changesets/config': 3.1.4
       '@changesets/errors': 0.2.0
-      '@changesets/get-dependents-graph': 2.1.3
-      '@changesets/get-release-plan': 4.0.15
+      '@changesets/get-dependents-graph': 2.1.4
+      '@changesets/get-release-plan': 4.0.16
       '@changesets/git': 3.0.4
       '@changesets/logger': 0.1.1
       '@changesets/pre': 2.0.2
@@ -2601,16 +2598,16 @@ snapshots:
       package-manager-detector: 0.2.7
       picocolors: 1.1.1
       resolve-from: 5.0.0
-      semver: 7.7.3
+      semver: 7.7.4
       spawndamnit: 3.0.1
       term-size: 2.2.1
     transitivePeerDependencies:
       - '@types/node'
 
-  '@changesets/config@3.1.3':
+  '@changesets/config@3.1.4':
     dependencies:
       '@changesets/errors': 0.2.0
-      '@changesets/get-dependents-graph': 2.1.3
+      '@changesets/get-dependents-graph': 2.1.4
       '@changesets/logger': 0.1.1
       '@changesets/should-skip-package': 0.1.2
       '@changesets/types': 6.1.0
@@ -2622,12 +2619,12 @@ snapshots:
     dependencies:
       extendable-error: 0.1.7
 
-  '@changesets/get-dependents-graph@2.1.3':
+  '@changesets/get-dependents-graph@2.1.4':
     dependencies:
       '@changesets/types': 6.1.0
       '@manypkg/get-packages': 1.1.3
       picocolors: 1.1.1
-      semver: 7.7.3
+      semver: 7.7.4
 
   '@changesets/get-github-info@0.8.0':
     dependencies:
@@ -2636,10 +2633,10 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@changesets/get-release-plan@4.0.15':
+  '@changesets/get-release-plan@4.0.16':
     dependencies:
-      '@changesets/assemble-release-plan': 6.0.9
-      '@changesets/config': 3.1.3
+      '@changesets/assemble-release-plan': 6.0.10
+      '@changesets/config': 3.1.4
       '@changesets/pre': 2.0.2
       '@changesets/read': 0.6.7
       '@changesets/types': 6.1.0
@@ -2800,7 +2797,7 @@ snapshots:
       hastscript: 9.0.1
       postcss: 8.5.6
       postcss-nested: 6.2.0(postcss@8.5.6)
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
       unist-util-visit-parents: 6.0.2
 
   '@expressive-code/plugin-frames@0.41.7':
@@ -2816,11 +2813,11 @@ snapshots:
     dependencies:
       '@expressive-code/core': 0.41.7
 
-  '@hideoo/starlight-plugins-docs-components@0.4.2(@astrojs/starlight@0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))':
+  '@hideoo/starlight-plugins-docs-components@0.4.2(@astrojs/starlight@0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))':
     dependencies:
-      '@astrojs/starlight': 0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))
-      starlight-package-managers: 0.12.0(@astrojs/starlight@0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))
-      starlight-showcases: 0.3.2(@astrojs/starlight@0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))
+      '@astrojs/starlight': 0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))
+      starlight-package-managers: 0.12.0(@astrojs/starlight@0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))
+      starlight-showcases: 0.3.2(@astrojs/starlight@0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))
 
   '@img/colour@1.0.0': {}
 
@@ -3170,7 +3167,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@trivago/prettier-plugin-sort-imports@6.0.2(prettier@3.8.1)':
+  '@trivago/prettier-plugin-sort-imports@6.0.2(prettier@3.8.3)':
     dependencies:
       '@babel/generator': 7.28.5
       '@babel/parser': 7.28.4
@@ -3180,16 +3177,16 @@ snapshots:
       lodash-es: 4.17.22
       minimatch: 9.0.5
       parse-imports-exports: 0.2.4
-      prettier: 3.8.1
+      prettier: 3.8.3
     transitivePeerDependencies:
       - supports-color
 
-  '@trueberryless-org/starlight-plugins-docs-components@0.5.0(@astrojs/starlight@0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))':
+  '@trueberryless-org/starlight-plugins-docs-components@0.5.0(@astrojs/starlight@0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))':
     dependencies:
-      '@astrojs/starlight': 0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))
-      '@hideoo/starlight-plugins-docs-components': 0.4.2(@astrojs/starlight@0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))
+      '@astrojs/starlight': 0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))
+      '@hideoo/starlight-plugins-docs-components': 0.4.2(@astrojs/starlight@0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))
       change-case: 5.4.4
-      starlight-showcases: 0.3.2(@astrojs/starlight@0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))
+      starlight-showcases: 0.3.2(@astrojs/starlight@0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)))
 
   '@types/debug@4.1.12':
     dependencies:
@@ -3798,7 +3795,7 @@ snapshots:
       mdast-util-to-hast: 13.2.1
       parse5: 7.3.0
       unist-util-position: 5.0.0
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
       vfile: 6.0.3
       web-namespaces: 2.0.1
       zwitch: 2.0.4
@@ -3818,7 +3815,7 @@ snapshots:
       nth-check: 2.1.1
       property-information: 6.5.0
       space-separated-tokens: 2.0.2
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
       zwitch: 2.0.4
 
   hast-util-to-estree@3.1.3:
@@ -4028,7 +4025,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
       '@types/unist': 3.0.3
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
 
   mdast-util-directive@3.0.0:
     dependencies:
@@ -4187,7 +4184,7 @@ snapshots:
       micromark-util-sanitize-uri: 2.0.1
       trim-lines: 3.0.1
       unist-util-position: 5.0.0
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
       vfile: 6.0.3
 
   mdast-util-to-markdown@2.1.2:
@@ -4199,7 +4196,7 @@ snapshots:
       mdast-util-to-string: 4.0.0
       micromark-util-classify-character: 2.0.1
       micromark-util-decode-string: 2.0.1
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
       zwitch: 2.0.4
 
   mdast-util-to-string@4.0.0:
@@ -4646,12 +4643,12 @@ snapshots:
   prettier-plugin-astro@0.14.1:
     dependencies:
       '@astrojs/compiler': 2.10.3
-      prettier: 3.8.1
+      prettier: 3.8.3
       sass-formatter: 0.7.9
 
   prettier@2.8.8: {}
 
-  prettier@3.8.1: {}
+  prettier@3.8.3: {}
 
   prismjs@1.30.0: {}
 
@@ -4804,7 +4801,7 @@ snapshots:
       retext: 9.0.0
       retext-smartypants: 6.2.0
       unified: 11.0.5
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
 
   remark-stringify@11.0.0:
     dependencies:
@@ -4824,7 +4821,7 @@ snapshots:
     dependencies:
       '@types/nlcst': 2.0.3
       nlcst-to-string: 4.0.0
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
 
   retext-stringify@4.0.0:
     dependencies:
@@ -4977,15 +4974,15 @@ snapshots:
 
   sprintf-js@1.0.3: {}
 
-  starlight-package-managers@0.12.0(@astrojs/starlight@0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))):
+  starlight-package-managers@0.12.0(@astrojs/starlight@0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))):
     dependencies:
-      '@astrojs/starlight': 0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))
+      '@astrojs/starlight': 0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))
 
-  starlight-showcases@0.3.2(@astrojs/starlight@0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))):
+  starlight-showcases@0.3.2(@astrojs/starlight@0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))):
     dependencies:
       '@astro-community/astro-embed-twitter': 0.5.11
       '@astro-community/astro-embed-youtube': 0.5.10
-      '@astrojs/starlight': 0.38.1(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))
+      '@astrojs/starlight': 0.38.4(astro@6.0.5(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3))
 
   stream-replace-string@2.0.0: {}
 
@@ -5106,7 +5103,7 @@ snapshots:
   unist-util-remove-position@5.0.0:
     dependencies:
       '@types/unist': 3.0.3
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
 
   unist-util-stringify-position@4.0.0:
     dependencies:
@@ -5120,12 +5117,6 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       unist-util-is: 6.0.1
-
-  unist-util-visit@5.0.0:
-    dependencies:
-      '@types/unist': 3.0.3
-      unist-util-is: 6.0.1
-      unist-util-visit-parents: 6.0.2
 
   unist-util-visit@5.1.0:
     dependencies:
