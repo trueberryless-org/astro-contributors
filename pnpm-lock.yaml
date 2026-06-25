@@ -45,7 +45,7 @@ importers:
   packages/astro-contributors:
     dependencies:
       astro:
-        specifier: ^7.0.0
+        specifier: ^5.0.0 || ^6.0.0 || ^7.0.0
         version: 7.0.2(@astrojs/markdown-remark@7.2.0)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@24.13.2)
 
 packages:
