@@ -1,6 +1,6 @@
 {
   "name": "astro-contributors",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Display a list of all contributors to your project",
   "keywords": [
     "starlight",

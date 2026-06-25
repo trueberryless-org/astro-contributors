@@ -1,5 +1,11 @@
 # astro-contributors
 
+## 0.9.0
+
+### Minor Changes
+
+- [#92](https://github.com/trueberryless-org/astro-contributors/pull/92) [`b1f977b`](https://github.com/trueberryless-org/astro-contributors/commit/b1f977b04156b7e4717de30ad48818ec8911ccbd) Thanks [@JimMadge](https://github.com/JimMadge)! - Add support for Astro 7
+
 ## 0.8.0
 
 ### Minor Changes
