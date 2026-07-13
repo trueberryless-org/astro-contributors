@@ -28,7 +28,7 @@
     "astro": "^5.0.0 || ^6.0.0 || ^7.0.0"
   },
   "engines": {
-    "node": ">=22.23.0"
+    "node": ">=22.23.1"
   },
   "publishConfig": {
     "access": "public"
