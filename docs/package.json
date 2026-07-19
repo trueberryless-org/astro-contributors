@@ -3,7 +3,7 @@
   "version": "0.3.1",
   "private": true,
   "description": "Display a list of all contributors to your project",
-  "homepage": "https://astro-contributors.trueberryless.org",
+  "homepage": "https://astro-contributors.netlify.app/",
   "bugs": {
     "url": "https://github.com/trueberryless-org/astro-contributors/issues"
   },
@@ -13,7 +13,7 @@
     "directory": "docs"
   },
   "license": "MIT",
-  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
+  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "type": "module",
   "scripts": {
     "astro": "astro",
