@@ -27,7 +27,7 @@ importers:
   docs:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.41.2
+        specifier: ^0.41.3
         version: 0.41.3(astro@7.1.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@24.13.2))
       '@trueberryless-org/starlight-plugins-docs-components':
         specifier: ^0.6.0
