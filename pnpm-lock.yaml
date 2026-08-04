@@ -33,7 +33,7 @@ importers:
         specifier: ^0.6.0
         version: 0.6.0(@astrojs/starlight@0.41.3(astro@7.1.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@24.13.2)))
       astro:
-        specifier: ^7.0.7
+        specifier: ^7.0.9
         version: 7.1.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@24.13.2)
       astro-contributors:
         specifier: workspace:*
