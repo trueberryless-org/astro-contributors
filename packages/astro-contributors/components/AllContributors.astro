@@ -66,44 +66,42 @@ const emojiMap: Record<string, string> = {
 };
 ---
 
-{
-  contributors.length > 0 ? (
-    <div
-      class="all-contributors-grid"
-      style={Object.keys(styleOverride).length > 0 ? styleOverride : undefined}
-    >
-      {contributors.map((contributor) => (
-        <a
-          href={contributor.profile}
-          class="contributor-card"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={contributor.avatar_url}
-            alt={contributor.name}
-            title={contributor.name}
-            width="64"
-            height="64"
-            loading="lazy"
-          />
-          <div class="contributor-info">
-            <span class="contributor-name">{contributor.name}</span>
-            <div class="contributor-badges">
-              {contributor.contributions.map((type) => (
-                <span class="badge" title={`Contribution: ${type}`}>
-                  {emojiMap[type] || "✨"}&nbsp;{type}
-                </span>
-              ))}
-            </div>
+{contributors.length > 0 ? (
+  <div
+    class="all-contributors-grid"
+    style={Object.keys(styleOverride).length > 0 ? styleOverride : undefined}
+  >
+    {contributors.map((contributor) => (
+      <a
+        href={contributor.profile}
+        class="contributor-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src={contributor.avatar_url}
+          alt={contributor.name}
+          title={contributor.name}
+          width="64"
+          height="64"
+          loading="lazy"
+        />
+        <div class="contributor-info">
+          <span class="contributor-name">{contributor.name}</span>
+          <div class="contributor-badges">
+            {contributor.contributions.map((type) => (
+              <span class="badge" title={`Contribution: ${type}`}>
+                {emojiMap[type] || "✨"}&nbsp;{type}
+              </span>
+            ))}
           </div>
-        </a>
-      ))}
-    </div>
-  ) : (
-    <p>No .all-contributorsrc file found or no contributors listed.</p>
-  )
-}
+        </div>
+      </a>
+    ))}
+  </div>
+) : (
+  <p>No .all-contributorsrc file found or no contributors listed.</p>
+)}
 
 <style>
   .all-contributors-grid {
