@@ -23,11 +23,11 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.41.7",
+    "@astrojs/starlight": "^0.41.10",
     "@trueberryless-org/starlight-plugins-docs-components": "^0.6.0",
-    "astro": "^7.2.2",
+    "astro": "^7.2.9",
     "astro-contributors": "workspace:*",
-    "sharp": "^0.35.3"
+    "sharp": "^0.35.4"
   },
   "packageManager": "pnpm@11.1.2",
   "engines": {
