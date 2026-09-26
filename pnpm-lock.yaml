@@ -9,10 +9,10 @@ importers:
   .:
     devDependencies:
       '@changesets/changelog-github':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.0.1
+        version: 1.0.1
       '@changesets/cli':
-        specifier: ^3.0.1
+        specifier: ^3.0.2
         version: 3.0.3
       '@trivago/prettier-plugin-sort-imports':
         specifier: 6.0.2
@@ -28,13 +28,13 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.41.10
-        version: 0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0))
+        version: 0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0))
       '@trueberryless-org/starlight-plugins-docs-components':
         specifier: ^0.6.0
-        version: 0.6.0(@astrojs/starlight@0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)))
+        version: 0.6.0(@astrojs/starlight@0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0)))
       astro:
-        specifier: ^7.2.9
-        version: 7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)
+        specifier: ^7.3.1
+        version: 7.3.5(@types/node@24.13.2)(yaml@2.9.0)
       astro-contributors:
         specifier: workspace:*
         version: link:../packages/astro-contributors
@@ -46,7 +46,7 @@ importers:
     dependencies:
       astro:
         specifier: ^5.0.0 || ^6.0.0 || ^7.0.0
-        version: 7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)
+        version: 7.3.5(@types/node@24.13.2)(yaml@2.9.0)
 
 packages:
 
@@ -59,69 +59,75 @@ packages:
   '@astro-community/astro-embed-youtube@0.5.10':
     resolution: {integrity: sha512-hVlx77KQLjKzElVQnrU5znQ5/E60keVSAPrhuWvQQHuqva5auJtt8YBpOThkwDMuEKXjQybEF1/3C07RZ8MAOQ==}
 
-  '@astrojs/compiler-binding-darwin-arm64@0.4.0':
-    resolution: {integrity: sha512-ZVUwHundaQyFNjE6uoa0usaC0WOCitDCLS/4mdb4rOiJXwVUuKJBMxI5WMzXLWmamsXtK/Z//ifLXvV5Yeh4Hw==}
+  '@astrojs/compiler-binding-android-arm64@0.5.0':
+    resolution: {integrity: sha512-wVviC/1KaBqGVF0DbTZ8UtAE3c8TN84CCe7w4ju3SGzo/ByWKn8HCqSU/+1wdltGCCSa30pjVk3H8DQUgnfhRQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [android]
+
+  '@astrojs/compiler-binding-darwin-arm64@0.5.0':
+    resolution: {integrity: sha512-5NNIkaGeiztD9QQfhOy+nNrBCZVeHqVZPlfJVjTKq4yJiiSsxAhuBzmVlmK3BDhbSgUT8dai4JV5m6t4/BIQaw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [darwin]
 
-  '@astrojs/compiler-binding-darwin-x64@0.4.0':
-    resolution: {integrity: sha512-FI6G8AY8u6fR1SI/QRR5yGMwtvZwP34CDmZpZ5HwJGa50UM1VISTLhqkhV4a476pmgd25X1Aur2dqw6hUnrlKA==}
+  '@astrojs/compiler-binding-darwin-x64@0.5.0':
+    resolution: {integrity: sha512-HU/waaccOQDXpvjoWA/9xzadNZIcWKblJoaw19lCxfVs6AHQYdZZOzZUQjY8HaLYGerTXjdADbra2XU+kXk9Og==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [darwin]
 
-  '@astrojs/compiler-binding-linux-arm64-gnu@0.4.0':
-    resolution: {integrity: sha512-lB9gLFJK7m82EnjaU8nlRBEfcwGNeHidW3sSjODTUjMNaoewVuUz9fwwdY5M4jiSXIqWLH3yl6TX8FTDKA74Sw==}
+  '@astrojs/compiler-binding-linux-arm64-gnu@0.5.0':
+    resolution: {integrity: sha512-a21petBJRi0mNBf+gkRZFoWdGH+VOo0zRQSzM4Nuez5RL5rFFkmbondMejkaRZzvE3LVYU2NVD5MGRgAs4V+nQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@astrojs/compiler-binding-linux-arm64-musl@0.4.0':
-    resolution: {integrity: sha512-HPbvWqbxFxyaoQJhLxCaSjtYBx9KBo7JGVzEFZCmMl968a2PsSH0UfiODYgYPXofTOIsIH2aoCcrHXML0IA3ig==}
+  '@astrojs/compiler-binding-linux-arm64-musl@0.5.0':
+    resolution: {integrity: sha512-t5rmu23b/6e6v0bhPibCtwPdABXMRL+bUaJXdkJwTpkINp4zCgH6fNa5Z6+RgkgFSCpmg9uf1MtRIqx1gdmBaA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@astrojs/compiler-binding-linux-x64-gnu@0.4.0':
-    resolution: {integrity: sha512-tQKolMxoJ/+0AmLWm1PmJ/i+z3i10ZU1bNuVjEDulCf48azEMtUNjTZgHJ5MPtpYRNc7dlETr8QujUfduzoC7Q==}
+  '@astrojs/compiler-binding-linux-x64-gnu@0.5.0':
+    resolution: {integrity: sha512-JWtouuxSiDb2OKKFsxOwfqlpJuZHo1ExirlBGfDgoJVG5zeJWwcd2tU2w4UaJA4suT/tAFSLk/vFhM5fLjWV4A==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@astrojs/compiler-binding-linux-x64-musl@0.4.0':
-    resolution: {integrity: sha512-5v5YymudsxMHp3NBLCS8BUlu5CRqeLtWD9cKS/4nIhIEHCbpz9okmVV6I0HWqmBAPhWYcDa3vw/vltYPrOQCTA==}
+  '@astrojs/compiler-binding-linux-x64-musl@0.5.0':
+    resolution: {integrity: sha512-LlaSO5v3UC6IxuTKXDViWV/fFHYhLKSO9Of118lNBXv/sjIWwziU+jjENxPgxfq/4oUeOu+613y6H93LBPNTOA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@astrojs/compiler-binding-wasm32-wasi@0.4.0':
-    resolution: {integrity: sha512-m/phuH3x3PREvv1OnkM44NoPh4MatUadix1fB1u5SvMLCyDTUZykDJbKnWf1cjnYmHdlB8HcjTjl6JrCqAIXcw==}
-    engines: {node: '>=14.0.0'}
+  '@astrojs/compiler-binding-wasm32-wasi@0.5.0':
+    resolution: {integrity: sha512-IP+Cp0m9yKg/AUT47077vHEaAOh/oT/iUZx1PDnV2GJzUxLSEotdQy5Hhv+ycvEadO/DbETSJfAWeV7kte4etQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [wasm32]
 
-  '@astrojs/compiler-binding-win32-arm64-msvc@0.4.0':
-    resolution: {integrity: sha512-B9zYf3okEY83kM8gydlpH2BHP00w4ifxPqlYlWrgTwuD6wnkrJDCwBlgy1q31cERjCJRXN1lrE2VmkLvFjv/6g==}
+  '@astrojs/compiler-binding-win32-arm64-msvc@0.5.0':
+    resolution: {integrity: sha512-v6plwy5GQBGvfv4QgiGhy/qkkQvYKW7Zh2vBArOnsGEDNHyUS43CWYwIQdw4ZdVVmLsFyhwTiueDZEP6zejddQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [win32]
 
-  '@astrojs/compiler-binding-win32-x64-msvc@0.4.0':
-    resolution: {integrity: sha512-zB0Nrv0dGc0zZWPGDRmmETTPhDRqyZjAjk+gWMlVrJX5U89obpB3VUUE1ZiHxOCN5LQojeLK6O8L/dnoHolvNQ==}
+  '@astrojs/compiler-binding-win32-x64-msvc@0.5.0':
+    resolution: {integrity: sha512-SgM158cSCJ248UIXaCCW2WqSTjOoFlDv93ed/ATguJqYpZNNVMlOdcPlgNH7WYj/OYeD0rIQr7XyRAYhB7+G1A==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
 
-  '@astrojs/compiler-binding@0.4.0':
-    resolution: {integrity: sha512-x2RjDUuWfwLNtc3mjAdSRInwqh/rqbLar9cm/5FOMbHvmYZB7yfKewzSclAxWjIZsypJDXv1lhaP2WG+P8TK3g==}
+  '@astrojs/compiler-binding@0.5.0':
+    resolution: {integrity: sha512-PxFTx3WoxQnbgUvvwmF6LRQwhHO77a4pewOtJvzxlrYtQ90tLgomLKvks/akrd2iix2ngGlOhxQonKNd8YoBHg==}
     engines: {node: ^20.19.0 || >=22.12.0}
 
-  '@astrojs/compiler-rs@0.4.0':
-    resolution: {integrity: sha512-koVikeon1kreEy+/JzLQRy3vzHHQVOjycs4degg4vFufKApZOwMZvSSAEztYNhmcQVfNVsVZZI4cEge3cexAbQ==}
+  '@astrojs/compiler-rs@0.5.0':
+    resolution: {integrity: sha512-2xIypn5R33FRWCXXXv0sfbDj8xcOvc2VmIbteytxMjOzP9LiGfvqaAFJjhdAjzhs6+ZKzYzbSE79rrPObYW5mg==}
     engines: {node: '>=22.12.0'}
 
   '@astrojs/compiler@2.13.1':
@@ -139,8 +145,8 @@ packages:
   '@astrojs/markdown-satteri@0.3.5':
     resolution: {integrity: sha512-CvWVEFAbay7YO+i9SaqDJubipA5ckiVB89QWoMJ5XC0m5CtFg8JwZ7Kau6X9sYY7FZURH0w2l03ISH2jOS/RDQ==}
 
-  '@astrojs/markdown-satteri@0.4.0':
-    resolution: {integrity: sha512-wykOOW9KsUVcZweOpY/CeXpdKcCKZy6fQbdcteWFuI75+sQCiqxYM7VKsGa5b+aGl3cYQscFY37rsbbyal5MRw==}
+  '@astrojs/markdown-satteri@0.4.2':
+    resolution: {integrity: sha512-g4QehXnB/MzxQWnSf17NciFInMqEJy9948p8cc7zGg/r7995m0Ln5PMr3Xlnj24iey1LchaoZ3SzTOa3D4P/3w==}
 
   '@astrojs/mdx@7.0.5':
     resolution: {integrity: sha512-wEM/HH1RiEntyPVagdiF+yArzfcYLKBB0C1RZspVidKZ97rRMbaqP1Nbl/GR0sJs8zwaceqxRymw8aOKKJRdYw==}
@@ -323,8 +329,8 @@ packages:
     resolution: {integrity: sha512-3Dst2Ime2Op5nd4XmWJLPIgp11ZFqJqSkVug9izK6TDcIV4YlhPS4ECbEVR+eGI0bk0r1ItogD4j2Oli87bJrA==}
     engines: {node: ^22.11 || ^24 || >=26}
 
-  '@changesets/changelog-github@1.0.0':
-    resolution: {integrity: sha512-PNCSH5CGJrqOKxRjrMp2NLhceQv2QBs6HkjrLvYQqsEE2/ItN5R8GD/mskZZluoNWYvjPYFsY9T6swXfp5E0UA==}
+  '@changesets/changelog-github@1.0.1':
+    resolution: {integrity: sha512-QUcrV7878yHlWPXXPA6gqSxNKwtVHCd1K22L7ZAoJw2yGy8K4QvjwOStD75+1Q9KD9ZSUgGS94HuYdd7HOVtpA==}
     engines: {node: ^22.11 || ^24 || >=26}
 
   '@changesets/cli@3.0.3':
@@ -348,8 +354,8 @@ packages:
     resolution: {integrity: sha512-ji/t5wFA1zREKXRUePE6Qi+Qu2UgxCeSSGQrphezwvQZrp49B7sJ+8+wvM0tA7zPeSxYKCojDy3WWgrl+s+awg==}
     engines: {node: ^22.11 || ^24 || >=26}
 
-  '@changesets/get-github-info@1.0.0':
-    resolution: {integrity: sha512-nf5zPSqEKW0eXiJ4ltbjyIQ/srUHfxbghkLCjKdOLI3LehKXhiqxXcpja39eGPaj6qqGx2lFCrLJ7VWYUf9H2w==}
+  '@changesets/get-github-info@1.0.1':
+    resolution: {integrity: sha512-ifLQCky/ZtDgZ4xCiUMjnLZSJ8xk52iIzMJbBBPlZWjr2CiTNTaTDddIVWKicrUAdWuLWL7PUw2fNa1yPwLpIg==}
     engines: {node: ^22.11 || ^24 || >=26}
 
   '@changesets/git@4.0.1':
@@ -395,6 +401,9 @@ packages:
   '@emnapi/core@1.11.1':
     resolution: {integrity: sha512-RSvbQmHzdKzNsLYa/wHrbc3KN4sYLKAdPZxqiM2HATqv/SBk2/ENSHpvXGaLOMcsAyz0poEGqkmmKYG3OWiJEQ==}
 
+  '@emnapi/core@1.11.3':
+    resolution: {integrity: sha512-zLpS5asjEb7lq8jYLq37N6XKaE41DIexlY1rF/z4/tIl3wo13Sqm28fRyfIsKZD+NZ8mM5RoKkpW/rBcuoSZSg==}
+
   '@emnapi/runtime@1.11.1':
     resolution: {integrity: sha512-vgj7R3y3Wgx24IQaGPA/R6YFXLHVMOZ0uVEyIQPaWs+rd1AzfEMXlAC22FYwO1XkKR6NPsq7mUandH8oIRdZFw==}
 
@@ -403,6 +412,9 @@ packages:
 
   '@emnapi/wasi-threads@1.2.2':
     resolution: {integrity: sha512-c95qOXkHdydNKhscBTebqEC1CVAZpyqOfVfBzQ1qgzyl3gfeldUjIggDbIZgDKsHLgnsM+igH7TJ/eAasaVuMA==}
+
+  '@emnapi/wasi-threads@1.2.3':
+    resolution: {integrity: sha512-ELEBe8PsLvvJ6QMr0zLt8ffvOHW/dc1m3CEzNMg7aJUv3bMaoDtw2TXyDAwkYBuroxxuHEwhRTLJSe5sya547g==}
 
   '@esbuild/aix-ppc64@0.28.1':
     resolution: {integrity: sha512-Svl7tq8k/08+p6CXPpRjQ1fKX+1odH/BQbb48fV6fj3CWHhsoIOoY87w1oHXm0qEpkIK3ZfVgp0hed3XBXzXMQ==}
@@ -768,8 +780,8 @@ packages:
   '@mdx-js/mdx@3.1.1':
     resolution: {integrity: sha512-f6ZO2ifpwAQIpzGWaBQT2TXxPv6z3RBzQKpVftEWN78Vl/YweF1uwussDx8ECAXVtr3Rs89fKyG9YlzUs9DyGQ==}
 
-  '@napi-rs/wasm-runtime@1.2.3':
-    resolution: {integrity: sha512-UMduMbqO5s5zF2NkNacMT/yK5Y5QiKvWr2+50bzIIxFDwVJ2h49b+oyjaCGPhJxd2/gC2x39EHv/gHVuu36x2Q==}
+  '@napi-rs/wasm-runtime@1.2.4':
+    resolution: {integrity: sha512-AJxoUD2/15ESHbvpcyjU274nsAPLuOtPHCk0vKJM5pj//Fg/B1FXNWjPnXTT9PymCYYiHo4zPj0ZomXBKhoy7g==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=23.5.0}
     peerDependencies:
       '@emnapi/core': ^1.7.1 || ^2.0.0-alpha.4
@@ -1062,8 +1074,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0 || ^6.0.0-beta || ^7.0.0
 
-  astro@7.2.10:
-    resolution: {integrity: sha512-uPtD+nK6kQXugyq4kiMPwj9OI3Sae6HSerA5X+fuv2CPaDwxmokFPPFlGRKIAXH0QAKu+zot2q6yrLG61wFmqg==}
+  astro@7.3.5:
+    resolution: {integrity: sha512-1p/ernaq/RuESbM5NMjWzbO6SiebMGrGcYlGjMfBhzzgM+n/X7AUmVyw8BqW2QYCdivpsHwJBcD1fqmlTZjZHg==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     peerDependencies:
@@ -1152,8 +1164,8 @@ packages:
   crossws@0.3.5:
     resolution: {integrity: sha512-ojKiDvcmByhwa8YYqbQI/hg7MEU0NC03+pSdEq4ZUnZR9xXpwk7E43SMNGkn+JxJGPFtNvQ48+vV2p+P1ml5PA==}
 
-  css-select@5.2.2:
-    resolution: {integrity: sha512-TizTzUddG/xYLA3NXodFM0fSbNizXjOKhqiQQwvhlspadZokn1KDy0NZFS0wuEubIYAV5/c1/lAr0TaaFXEXzw==}
+  css-select@6.0.0:
+    resolution: {integrity: sha512-rZZVSLle8v0+EY8QAkDWrKhpgt6SA5OtHsgBnsj6ZaLb5dmDVOWUDtQitd9ydxxvEjhewNudS6eTVU7uOyzvXw==}
 
   css-selector-parser@3.3.0:
     resolution: {integrity: sha512-Y2asgMGFqJKF4fq4xHDSlFYIkeVfRsm69lQC1q9kbEsH5XtnINTMrweLkjYMeaUgiXBy/uvKeO/a1JHTNnmB2g==}
@@ -1166,8 +1178,8 @@ packages:
     resolution: {integrity: sha512-X7sjQzceUhu1u7Y/ylrRZFU2FS6LRiFVp6rKLPg23y3x3c3DOKAwuXGDp+PAGjh6CSnCjYeAul8pcT8bAl+lSA==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
 
-  css-what@6.2.2:
-    resolution: {integrity: sha512-u/O3vwbptzhMs3L1fQE82ZSLHQQfto5gyZzwteVIEyeaY5Fc7R4dapF/BvRoSYFeqfBk4m0V1Vafq5Pjv25wvA==}
+  css-what@7.0.0:
+    resolution: {integrity: sha512-wD5oz5xibMOPHzy13CyGmogB3phdvcDaB5t0W/Nr5Z2O/agcB8YwOz6e2Lsp10pNDzBoDO9nVa3RGs/2BttpHQ==}
     engines: {node: '>= 6'}
 
   cssesc@3.0.0:
@@ -1313,8 +1325,8 @@ packages:
       picomatch:
         optional: true
 
-  find-proc@0.1.0:
-    resolution: {integrity: sha512-OaOpEYv2PiQ7SQ5LIrl+deA1XaWcxEjnpM6VuWXTUvn+teIXxeFTLDmu18/zDQpFmHN4o3oDBX+BT0AGwEhemg==}
+  find-proc@0.2.0:
+    resolution: {integrity: sha512-a6h2nTrgB3g5Wrn4au9Ux4kMk7IJtyF6oA8uGn+mk3weLZssUtc1cp6meHIzzuW2o1srrBAxzkmXLbqjRkgB6w==}
     engines: {node: ^20.19.0 || >=22.12.0}
 
   flattie@1.1.1:
@@ -1466,8 +1478,8 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  js-yaml@4.3.0:
-    resolution: {integrity: sha512-1td788aAnnZ5qs7V2QIRl1owjtYpbKt749Y3xauqQgwIIGF/xXWz1wMTEBx5O3LK3lXLVuqXPdPxj2BoFHaW9Q==}
+  js-yaml@4.3.2:
+    resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
     hasBin: true
 
   jsesc@3.1.0:
@@ -1792,8 +1804,8 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
-  obug@2.1.4:
-    resolution: {integrity: sha512-4a+OsYv9UktOJKE+l1A4OufDgdRF9PifWj+tJnHURo/P+WOxpG4GzUFL9qCalmWauao6ogiG+QvnCovwPoyAWA==}
+  obug@3.0.0:
+    resolution: {integrity: sha512-5vvB5+W7ePv+p3uqxi+RcW1XAzLW0/hxt3/4X4Lc4qHudzOhmBiBwOY6DRob4WnanAEGvNcLjF+KNOufrUoEQw==}
     engines: {node: '>=12.20.0'}
 
   ofetch@1.5.1:
@@ -1995,8 +2007,8 @@ packages:
   satteri@0.9.5:
     resolution: {integrity: sha512-ZuWVl+vnM64y+/TtX8Kosv2c00W+hLQiiwnEL6H0UKVVrxFqMw4D2CJHHQaouVd89OAhtBBfjWLqhKi3TVUV4w==}
 
-  sax@1.6.0:
-    resolution: {integrity: sha512-6R3J5M4AcbtLUdZmRv2SygeVaM7IhrLXu9BmnOGmmACak8fiUtOsYNWUS4uK7upbmHIBbLBeFeI//477BKLBzA==}
+  sax@1.6.1:
+    resolution: {integrity: sha512-42tBVwLWnaQvW5zc4HbZrTuWccECCZfBi92FDuwtqxasH+JbPB3/FOKb1m222K42R4WxuxzzMsTswfzgtSu64Q==}
     engines: {node: '>=11.0.0'}
 
   semver@7.8.5:
@@ -2029,8 +2041,8 @@ packages:
     engines: {node: '>=20.19.5', npm: '>=10.8.2'}
     hasBin: true
 
-  smol-toml@1.7.0:
-    resolution: {integrity: sha512-aqVvWoyO21L23mb+drl4RmMXbf6N7FdHjAhTRA9ZBL7apWBgfWC16KjrASI+1p9GAroljyMHj6fK67i0UiTNvQ==}
+  smol-toml@1.9.0:
+    resolution: {integrity: sha512-hpd+HLON7HdZXqYchMM/+LaTTbdK0AU3NngIJ4KVyWbY9bfQqdL9cD+4yf6dUoU2Ap4VsU0JkQi6FxAI1B2mXQ==}
     engines: {node: '>= 18'}
 
   source-map-js@1.2.1:
@@ -2071,16 +2083,16 @@ packages:
   suf-log@2.5.3:
     resolution: {integrity: sha512-KvC8OPjzdNOe+xQ4XWJV2whQA0aM1kGVczMQ8+dStAO6KfEB140JEVQ9dE76ONZ0/Ylf67ni4tILPJB41U0eow==}
 
-  svgo@4.0.2:
-    resolution: {integrity: sha512-ekx94z1rRc5LDi6oSUaeRnYhd0UOJxdtQCL2rF8xpWxD3TPAsISWOrxezqGovqS38GRZOdpDfvQe3ts6F7nsng==}
+  svgo@4.1.0:
+    resolution: {integrity: sha512-bkxnTg1kSU0guhIBmibA6UUhrQmPVA1XsQLN+ylCd+UWzbnLkySOcXpyk1mrl05f+pcaCx2eHb+sp6BgMZWX+Q==}
     engines: {node: '>=16'}
     hasBin: true
 
   tiny-inflate@1.0.3:
     resolution: {integrity: sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==}
 
-  tinyclip@0.1.15:
-    resolution: {integrity: sha512-uo33abH+Ays0xYaDysoBt494Hb3hsEczMpcC0MwFl773pazORx4fmvKhclhR1wonUbB6vvpRsvVMwnhfqeMc+A==}
+  tinyclip@1.0.3:
+    resolution: {integrity: sha512-nTv2raKFMzGG6JJp0lpNDsRPdfFE6UHlu2rVEjXo8vkx1ZS3LW2CVXqIaLu8xZlu+6tbFs9V58Qc/Jmk/Ii7wA==}
     engines: {node: ^16.14.0 || >= 17.3.0}
 
   tinyexec@1.3.1:
@@ -2221,6 +2233,10 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  verkit@0.4.1:
+    resolution: {integrity: sha512-mMVzj0TXExtVdlDEq+Mzp0eyOuyznNpFobNM3uAqe3HVm/Ps2c+u17BligMkZjZCA6EiXpoon8iRTer3iu40SQ==}
+    engines: {node: '>=18.12.0'}
+
   vfile-location@5.0.3:
     resolution: {integrity: sha512-5yXvWDEgqeiYiBe1lbxYF7UMAIm/IcopxMHrMQDq3nvKcjPKIhZklUKL+AE7J7uApI4kwe2snsK+eI6UTj9EHg==}
 
@@ -2300,8 +2316,8 @@ packages:
     resolution: {integrity: sha512-4LCcse/U2MHZ63HAJVE+v71o7yOdIe4cZ70Wpf8D/IyjDKYQLV5GD46B+hSTjJsvV5PztjvHoU580EftxjDZFQ==}
     engines: {node: '>=12.20'}
 
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+  zod@4.6.5:
+    resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -2318,59 +2334,56 @@ snapshots:
     dependencies:
       lite-youtube-embed: 0.3.4
 
-  '@astrojs/compiler-binding-darwin-arm64@0.4.0':
+  '@astrojs/compiler-binding-android-arm64@0.5.0':
     optional: true
 
-  '@astrojs/compiler-binding-darwin-x64@0.4.0':
+  '@astrojs/compiler-binding-darwin-arm64@0.5.0':
     optional: true
 
-  '@astrojs/compiler-binding-linux-arm64-gnu@0.4.0':
+  '@astrojs/compiler-binding-darwin-x64@0.5.0':
     optional: true
 
-  '@astrojs/compiler-binding-linux-arm64-musl@0.4.0':
+  '@astrojs/compiler-binding-linux-arm64-gnu@0.5.0':
     optional: true
 
-  '@astrojs/compiler-binding-linux-x64-gnu@0.4.0':
+  '@astrojs/compiler-binding-linux-arm64-musl@0.5.0':
     optional: true
 
-  '@astrojs/compiler-binding-linux-x64-musl@0.4.0':
+  '@astrojs/compiler-binding-linux-x64-gnu@0.5.0':
     optional: true
 
-  '@astrojs/compiler-binding-wasm32-wasi@0.4.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)':
+  '@astrojs/compiler-binding-linux-x64-musl@0.5.0':
+    optional: true
+
+  '@astrojs/compiler-binding-wasm32-wasi@0.5.0':
     dependencies:
-      '@napi-rs/wasm-runtime': 1.2.3(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)
-    transitivePeerDependencies:
-      - '@emnapi/core'
-      - '@emnapi/runtime'
+      '@emnapi/core': 1.11.3
+      '@emnapi/runtime': 1.11.3
+      '@napi-rs/wasm-runtime': 1.2.4(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)
     optional: true
 
-  '@astrojs/compiler-binding-win32-arm64-msvc@0.4.0':
+  '@astrojs/compiler-binding-win32-arm64-msvc@0.5.0':
     optional: true
 
-  '@astrojs/compiler-binding-win32-x64-msvc@0.4.0':
+  '@astrojs/compiler-binding-win32-x64-msvc@0.5.0':
     optional: true
 
-  '@astrojs/compiler-binding@0.4.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)':
+  '@astrojs/compiler-binding@0.5.0':
     optionalDependencies:
-      '@astrojs/compiler-binding-darwin-arm64': 0.4.0
-      '@astrojs/compiler-binding-darwin-x64': 0.4.0
-      '@astrojs/compiler-binding-linux-arm64-gnu': 0.4.0
-      '@astrojs/compiler-binding-linux-arm64-musl': 0.4.0
-      '@astrojs/compiler-binding-linux-x64-gnu': 0.4.0
-      '@astrojs/compiler-binding-linux-x64-musl': 0.4.0
-      '@astrojs/compiler-binding-wasm32-wasi': 0.4.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)
-      '@astrojs/compiler-binding-win32-arm64-msvc': 0.4.0
-      '@astrojs/compiler-binding-win32-x64-msvc': 0.4.0
-    transitivePeerDependencies:
-      - '@emnapi/core'
-      - '@emnapi/runtime'
+      '@astrojs/compiler-binding-android-arm64': 0.5.0
+      '@astrojs/compiler-binding-darwin-arm64': 0.5.0
+      '@astrojs/compiler-binding-darwin-x64': 0.5.0
+      '@astrojs/compiler-binding-linux-arm64-gnu': 0.5.0
+      '@astrojs/compiler-binding-linux-arm64-musl': 0.5.0
+      '@astrojs/compiler-binding-linux-x64-gnu': 0.5.0
+      '@astrojs/compiler-binding-linux-x64-musl': 0.5.0
+      '@astrojs/compiler-binding-wasm32-wasi': 0.5.0
+      '@astrojs/compiler-binding-win32-arm64-msvc': 0.5.0
+      '@astrojs/compiler-binding-win32-x64-msvc': 0.5.0
 
-  '@astrojs/compiler-rs@0.4.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)':
+  '@astrojs/compiler-rs@0.5.0':
     dependencies:
-      '@astrojs/compiler-binding': 0.4.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)
-    transitivePeerDependencies:
-      - '@emnapi/core'
-      - '@emnapi/runtime'
+      '@astrojs/compiler-binding': 0.5.0
 
   '@astrojs/compiler@2.13.1': {}
 
@@ -2378,22 +2391,22 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
-      js-yaml: 4.3.0
+      js-yaml: 4.3.2
       picomatch: 4.0.7
       retext-smartypants: 6.2.0
       shiki: 4.3.1
-      smol-toml: 1.7.0
+      smol-toml: 1.9.0
       unified: 11.0.5
 
   '@astrojs/internal-helpers@0.11.0':
     dependencies:
       '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
-      js-yaml: 4.3.0
+      js-yaml: 4.3.2
       picomatch: 4.0.7
       retext-smartypants: 6.2.0
       shiki: 4.3.1
-      smol-toml: 1.7.0
+      smol-toml: 1.9.0
       unified: 11.0.5
 
   '@astrojs/markdown-remark@7.2.2':
@@ -2426,20 +2439,20 @@ snapshots:
       hast-util-from-html: 2.0.3
       satteri: 0.9.5
 
-  '@astrojs/markdown-satteri@0.4.0':
+  '@astrojs/markdown-satteri@0.4.2':
     dependencies:
       '@astrojs/internal-helpers': 0.11.0
       '@astrojs/prism': 4.0.2
       github-slugger: 2.0.0
       satteri: 0.10.5
 
-  '@astrojs/mdx@7.0.5(@astrojs/markdown-satteri@0.3.5)(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0))':
+  '@astrojs/mdx@7.0.5(@astrojs/markdown-satteri@0.3.5)(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0))':
     dependencies:
       '@astrojs/internal-helpers': 0.10.2
       '@astrojs/markdown-remark': 7.2.2
       '@mdx-js/mdx': 3.1.1
       acorn: 8.17.0
-      astro: 7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)
+      astro: 7.3.5(@types/node@24.13.2)(yaml@2.9.0)
       es-module-lexer: 2.3.1
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -2463,26 +2476,26 @@ snapshots:
     dependencies:
       sitemap: 9.0.1
       stream-replace-string: 2.0.0
-      zod: 4.4.3
+      zod: 4.6.5
 
-  '@astrojs/starlight@0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0))':
+  '@astrojs/starlight@0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0))':
     dependencies:
       '@astrojs/markdown-satteri': 0.3.5
-      '@astrojs/mdx': 7.0.5(@astrojs/markdown-satteri@0.3.5)(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0))
+      '@astrojs/mdx': 7.0.5(@astrojs/markdown-satteri@0.3.5)(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0))
       '@astrojs/sitemap': 3.7.3
       '@pagefind/default-ui': 1.5.2
       '@types/hast': 3.0.5
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)
-      astro-expressive-code: 0.44.0(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0))
+      astro: 7.3.5(@types/node@24.13.2)(yaml@2.9.0)
+      astro-expressive-code: 0.44.0(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.4
       hast-util-to-string: 3.0.1
       hastscript: 9.0.1
       i18next: 26.3.2
-      js-yaml: 4.3.0
+      js-yaml: 4.3.2
       klona: 2.0.6
       magic-string: 0.30.21
       mdast-util-directive: 3.1.0
@@ -2595,14 +2608,14 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
-      '@napi-rs/wasm-runtime': 1.2.3(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
+      '@napi-rs/wasm-runtime': 1.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
     optional: true
 
   '@bruits/satteri-wasm32-wasi@0.9.5':
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
-      '@napi-rs/wasm-runtime': 1.2.3(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
+      '@napi-rs/wasm-runtime': 1.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
     optional: true
 
   '@bruits/satteri-win32-arm64-msvc@0.10.5':
@@ -2644,9 +2657,9 @@ snapshots:
     dependencies:
       '@changesets/types': 7.0.0
 
-  '@changesets/changelog-github@1.0.0':
+  '@changesets/changelog-github@1.0.1':
     dependencies:
-      '@changesets/get-github-info': 1.0.0
+      '@changesets/get-github-info': 1.0.1
       '@changesets/types': 7.0.0
 
   '@changesets/cli@3.0.3':
@@ -2693,7 +2706,7 @@ snapshots:
       '@changesets/types': 7.0.0
       semver: 7.8.5
 
-  '@changesets/get-github-info@1.0.0':
+  '@changesets/get-github-info@1.0.1':
     dependencies:
       dataloader: 2.2.3
 
@@ -2754,6 +2767,12 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
+  '@emnapi/core@1.11.3':
+    dependencies:
+      '@emnapi/wasi-threads': 1.2.3
+      tslib: 2.8.1
+    optional: true
+
   '@emnapi/runtime@1.11.1':
     dependencies:
       tslib: 2.8.1
@@ -2765,6 +2784,11 @@ snapshots:
     optional: true
 
   '@emnapi/wasi-threads@1.2.2':
+    dependencies:
+      tslib: 2.8.1
+    optional: true
+
+  '@emnapi/wasi-threads@1.2.3':
     dependencies:
       tslib: 2.8.1
     optional: true
@@ -2872,11 +2896,11 @@ snapshots:
     dependencies:
       '@expressive-code/core': 0.44.0
 
-  '@hideoo/starlight-plugins-docs-components@0.4.2(@astrojs/starlight@0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)))':
+  '@hideoo/starlight-plugins-docs-components@0.4.2(@astrojs/starlight@0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0)))':
     dependencies:
-      '@astrojs/starlight': 0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0))
-      starlight-package-managers: 0.12.0(@astrojs/starlight@0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)))
-      starlight-showcases: 0.3.2(@astrojs/starlight@0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)))
+      '@astrojs/starlight': 0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0))
+      starlight-package-managers: 0.12.0(@astrojs/starlight@0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0)))
+      starlight-showcases: 0.3.2(@astrojs/starlight@0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0)))
 
   '@img/colour@1.1.0': {}
 
@@ -3043,16 +3067,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@napi-rs/wasm-runtime@1.2.3(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
+  '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
       '@tybys/wasm-util': 0.10.3
     optional: true
 
-  '@napi-rs/wasm-runtime@1.2.3(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)':
+  '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
     dependencies:
-      '@emnapi/core': 1.11.1
+      '@emnapi/core': 1.11.3
       '@emnapi/runtime': 1.11.3
       '@tybys/wasm-util': 0.10.3
     optional: true
@@ -3126,7 +3150,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
-      '@napi-rs/wasm-runtime': 1.2.3(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
+      '@napi-rs/wasm-runtime': 1.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
     optional: true
 
   '@rolldown/binding-win32-arm64-msvc@1.1.5':
@@ -3191,12 +3215,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@trueberryless-org/starlight-plugins-docs-components@0.6.0(@astrojs/starlight@0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)))':
+  '@trueberryless-org/starlight-plugins-docs-components@0.6.0(@astrojs/starlight@0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0)))':
     dependencies:
-      '@astrojs/starlight': 0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0))
-      '@hideoo/starlight-plugins-docs-components': 0.4.2(@astrojs/starlight@0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)))
+      '@astrojs/starlight': 0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0))
+      '@hideoo/starlight-plugins-docs-components': 0.4.2(@astrojs/starlight@0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0)))
       change-case: 5.4.4
-      starlight-showcases: 0.3.2(@astrojs/starlight@0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)))
+      starlight-showcases: 0.3.2(@astrojs/starlight@0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0)))
 
   '@tybys/wasm-util@0.10.3':
     dependencies:
@@ -3270,17 +3294,17 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.44.0(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)):
+  astro-expressive-code@0.44.0(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0)):
     dependencies:
-      astro: 7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0)
+      astro: 7.3.5(@types/node@24.13.2)(yaml@2.9.0)
       rehype-expressive-code: 0.44.0
       url-extras: 0.1.0
 
-  astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0):
+  astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0):
     dependencies:
-      '@astrojs/compiler-rs': 0.4.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)
+      '@astrojs/compiler-rs': 0.5.0
       '@astrojs/internal-helpers': 0.11.0
-      '@astrojs/markdown-satteri': 0.4.0
+      '@astrojs/markdown-satteri': 0.4.2
       '@astrojs/telemetry': 3.3.3
       '@capsizecss/unpack': 4.0.1
       '@clack/prompts': 1.7.0
@@ -3297,40 +3321,40 @@ snapshots:
       dset: 3.1.4
       es-module-lexer: 2.3.1
       esbuild: 0.28.1
-      find-proc: 0.1.0
+      find-proc: 0.2.0
       flattie: 1.1.1
       fontace: 0.4.1
       get-tsconfig: 5.0.0-beta.4
       github-slugger: 2.0.0
       html-escaper: 3.0.3
       http-cache-semantics: 4.2.0
-      js-yaml: 4.3.0
+      js-yaml: 4.3.2
       jsonc-parser: 3.3.1
       magic-string: 1.1.0
       magicast: 0.5.3
       mrmime: 2.0.1
       neotraverse: 1.0.1
-      obug: 2.1.4
+      obug: 3.0.0
       p-limit: 7.3.0
       p-queue: 9.3.1
       package-manager-detector: 1.8.0
       piccolore: 0.1.3
       picomatch: 4.0.7
-      semver: 7.8.5
       shiki: 4.3.1
-      smol-toml: 1.7.0
-      svgo: 4.0.2
-      tinyclip: 0.1.15
+      smol-toml: 1.9.0
+      svgo: 4.1.0
+      tinyclip: 1.0.3
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
       ultrahtml: 1.7.0
       unifont: 0.7.5
       unstorage: 1.17.5
+      verkit: 0.4.1
       vite: 8.1.5(@types/node@24.13.2)(esbuild@0.28.1)(yaml@2.9.0)
       vitefu: 1.1.3(vite@8.1.5(@types/node@24.13.2)(esbuild@0.28.1)(yaml@2.9.0))
       xxhash-wasm: 1.1.0
       yargs-parser: 22.0.0
-      zod: 4.4.3
+      zod: 4.6.5
     optionalDependencies:
       sharp: 0.35.4(@types/node@24.13.2)
     transitivePeerDependencies:
@@ -3342,8 +3366,6 @@ snapshots:
       - '@azure/storage-blob'
       - '@capacitor/preferences'
       - '@deno/kv'
-      - '@emnapi/core'
-      - '@emnapi/runtime'
       - '@netlify/blobs'
       - '@planetscale/database'
       - '@types/node'
@@ -3425,10 +3447,10 @@ snapshots:
     dependencies:
       uncrypto: 0.1.3
 
-  css-select@5.2.2:
+  css-select@6.0.0:
     dependencies:
       boolbase: 1.0.0
-      css-what: 6.2.2
+      css-what: 7.0.0
       domhandler: 5.0.3
       domutils: 3.2.2
       nth-check: 2.1.1
@@ -3445,7 +3467,7 @@ snapshots:
       mdn-data: 2.27.1
       source-map-js: 1.2.1
 
-  css-what@6.2.2: {}
+  css-what@7.0.0: {}
 
   cssesc@3.0.0: {}
 
@@ -3610,7 +3632,7 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.7
 
-  find-proc@0.1.0: {}
+  find-proc@0.2.0: {}
 
   flattie@1.1.1: {}
 
@@ -3871,7 +3893,7 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  js-yaml@4.3.0:
+  js-yaml@4.3.2:
     dependencies:
       argparse: 2.0.1
 
@@ -4448,7 +4470,7 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  obug@2.1.4: {}
+  obug@3.0.0: {}
 
   ofetch@1.5.1:
     dependencies:
@@ -4786,7 +4808,7 @@ snapshots:
       '@bruits/satteri-win32-arm64-msvc': 0.9.5
       '@bruits/satteri-win32-x64-msvc': 0.9.5
 
-  sax@1.6.0: {}
+  sax@1.6.1: {}
 
   semver@7.8.5: {}
 
@@ -4843,9 +4865,9 @@ snapshots:
       '@types/node': 24.13.2
       '@types/sax': 1.2.7
       arg: 5.0.2
-      sax: 1.6.0
+      sax: 1.6.1
 
-  smol-toml@1.7.0: {}
+  smol-toml@1.9.0: {}
 
   source-map-js@1.2.1: {}
 
@@ -4853,15 +4875,15 @@ snapshots:
 
   space-separated-tokens@2.0.2: {}
 
-  starlight-package-managers@0.12.0(@astrojs/starlight@0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0))):
+  starlight-package-managers@0.12.0(@astrojs/starlight@0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0))):
     dependencies:
-      '@astrojs/starlight': 0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0))
+      '@astrojs/starlight': 0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0))
 
-  starlight-showcases@0.3.2(@astrojs/starlight@0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0))):
+  starlight-showcases@0.3.2(@astrojs/starlight@0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0))):
     dependencies:
       '@astro-community/astro-embed-twitter': 0.5.11
       '@astro-community/astro-embed-youtube': 0.5.10
-      '@astrojs/starlight': 0.41.11(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.2)(yaml@2.9.0))
+      '@astrojs/starlight': 0.41.11(astro@7.3.5(@types/node@24.13.2)(yaml@2.9.0))
 
   stream-replace-string@2.0.0: {}
 
@@ -4882,19 +4904,19 @@ snapshots:
     dependencies:
       s.color: 0.0.15
 
-  svgo@4.0.2:
+  svgo@4.1.0:
     dependencies:
       commander: 11.1.0
-      css-select: 5.2.2
+      css-select: 6.0.0
       css-tree: 3.2.1
-      css-what: 6.2.2
+      css-what: 7.0.0
       csso: 5.0.5
       picocolors: 1.1.1
-      sax: 1.6.0
+      sax: 1.6.1
 
   tiny-inflate@1.0.3: {}
 
-  tinyclip@0.1.15: {}
+  tinyclip@1.0.3: {}
 
   tinyexec@1.3.1: {}
 
@@ -4997,6 +5019,8 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
+  verkit@0.4.1: {}
+
   vfile-location@5.0.3:
     dependencies:
       '@types/unist': 3.0.3
@@ -5039,6 +5063,6 @@ snapshots:
 
   yocto-queue@1.2.2: {}
 
-  zod@4.4.3: {}
+  zod@4.6.5: {}
 
   zwitch@2.0.4: {}
