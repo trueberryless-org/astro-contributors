@@ -1,5 +1,19 @@
 # astro-contributors
 
+## 0.10.0
+
+### Minor Changes
+
+- [#125](https://github.com/trueberryless-org/astro-contributors/pull/125) [`2d416dd`](https://github.com/trueberryless-org/astro-contributors/commit/2d416dd74e5c50c5b3149d98b0807d53affa416f) Thanks [@trueberryless-bot](https://github.com/trueberryless-bot)! - Adds a `formatLink` prop to the `ContributorList` and `AllContributors` components to customize the link of each contributor, e.g. to link to their commits in your repository instead of their GitHub profile.
+  
+  See the [`ContributorList` documentation](https://astro-contributors.netlify.app/components/contributor-list/#formatlink) for more details.
+
+### Patch Changes
+
+- [#125](https://github.com/trueberryless-org/astro-contributors/pull/125) [`2d416dd`](https://github.com/trueberryless-org/astro-contributors/commit/2d416dd74e5c50c5b3149d98b0807d53affa416f) Thanks [@trueberryless-bot](https://github.com/trueberryless-bot)! - Fixes the `PUBLIC_GITHUB_TOKEN` environment variable being ignored by GitHub when it contains a plain personal access token. Tokens in the `username:token` format are still sent using Basic authentication.
+
+- [#125](https://github.com/trueberryless-org/astro-contributors/pull/125) [`2d416dd`](https://github.com/trueberryless-org/astro-contributors/commit/2d416dd74e5c50c5b3149d98b0807d53affa416f) Thanks [@trueberryless-bot](https://github.com/trueberryless-bot)! - Refactors the component internals and improves the warning logged when the contributors of a GitHub repository cannot be fetched.
+
 ## 0.9.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "astro-contributors",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "license": "MIT",
   "description": "Astro components to display all contributors to your project.",
   "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
