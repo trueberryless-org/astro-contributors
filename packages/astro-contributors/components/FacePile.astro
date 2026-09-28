@@ -12,22 +12,20 @@ const styleOverride = focusColor ? { "--avatar-focus-color": focusColor } : {};
 
 <div style={styleOverride}>
   <ul class="avatar-list">
-    {
-      contributors.map((item) => (
-        <li>
-          <a href={`https://github.com/${item.login}`}>
-            <img
-              alt={item.login}
-              title={item.login}
-              width="3rem"
-              height="3rem"
-              src={`https://avatars.githubusercontent.com/u/${item.id}?s=64`}
-              loading="lazy"
-            />
-          </a>
-        </li>
-      ))
-    }
+    {contributors.map((item) => (
+      <li>
+        <a href={`https://github.com/${item.login}`}>
+          <img
+            alt={item.login}
+            title={item.login}
+            width="3rem"
+            height="3rem"
+            src={`https://avatars.githubusercontent.com/u/${item.id}?s=64`}
+            loading="lazy"
+          />
+        </a>
+      </li>
+    ))}
   </ul>
 </div>
 
