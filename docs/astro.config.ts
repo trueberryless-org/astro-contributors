@@ -18,6 +18,10 @@ export default defineConfig({
   },
   integrations: [
     starlight({
+      credits: true,
+      components: {
+        Footer: "./src/components/Footer.astro",
+      },
       title: "Astro Contributors",
       head: [
         {
