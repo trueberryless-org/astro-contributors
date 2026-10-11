@@ -1,10 +1,19 @@
 {
   "name": "astro-contributors-docs",
   "version": "0.3.1",
-  "license": "MIT",
-  "description": "Documentation for the Astro Contributors components.",
-  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "private": true,
+  "description": "Documentation for the Astro Contributors components.",
+  "homepage": "https://astro-contributors.netlify.app/",
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/astro-contributors/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trueberryless-org/astro-contributors.git",
+    "directory": "docs"
+  },
+  "license": "MIT",
+  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "type": "module",
   "scripts": {
     "astro": "astro",
@@ -20,14 +29,8 @@
     "astro-contributors": "workspace:*",
     "sharp": "^0.35.4"
   },
+  "packageManager": "pnpm@11.28.0",
   "engines": {
     "node": ">=22.12.0"
-  },
-  "homepage": "https://astro-contributors.netlify.app",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/trueberryless-org/astro-contributors.git",
-    "directory": "docs"
-  },
-  "bugs": "https://github.com/trueberryless-org/astro-contributors/issues"
+  }
 }

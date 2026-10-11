@@ -1,10 +1,18 @@
 {
   "name": "astro-contributors-monorepo",
   "version": "0.0.0",
-  "license": "MIT",
-  "description": "Astro components to display all contributors to your project.",
-  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "private": true,
+  "description": "Astro components to display all contributors to your project.",
+  "homepage": "https://github.com/trueberryless-org/astro-contributors",
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/astro-contributors/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trueberryless-org/astro-contributors.git"
+  },
+  "license": "MIT",
+  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "type": "module",
   "scripts": {
     "build": "pnpm --filter astro-contributors-docs build",
@@ -17,20 +25,14 @@
     "@astrojs/check": "^0.9.10",
     "@changesets/changelog-github": "^1.0.1",
     "@changesets/cli": "^3.0.3",
-    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "@trivago/prettier-plugin-sort-imports": "6.0.2",
     "astro": "^7.3.5",
-    "prettier": "^3.9.9",
-    "prettier-plugin-astro": "^1.1.0",
+    "prettier": "3.9.9",
+    "prettier-plugin-astro": "1.1.0",
     "typescript": "^6.0.3"
   },
   "packageManager": "pnpm@11.28.0",
   "engines": {
     "node": ">=22.12.0"
-  },
-  "homepage": "https://astro-contributors.netlify.app",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/trueberryless-org/astro-contributors.git"
-  },
-  "bugs": "https://github.com/trueberryless-org/astro-contributors/issues"
+  }
 }
